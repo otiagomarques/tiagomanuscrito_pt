@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+    	<div style="clear: both">
+         <h3 style="display: inline;"> {{ post.date | date: "%b %d" }}</h3>
+     	 <h4 style="display: inline;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+     	 </div>
+    </article>
+  {% endfor %}
+</div>
