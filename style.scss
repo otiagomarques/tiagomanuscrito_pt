@@ -256,6 +256,12 @@ footer {
   font-size: 15px;
 }
 
+@media screen and (max-width: 640px) {
+    .post {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
