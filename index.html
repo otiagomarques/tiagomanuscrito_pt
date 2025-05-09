@@ -1,14 +1,42 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>Tiago Manuscrito</title>
+  </head>
+  <body>
+    <header>
+      <object type="image/svg+xml" data="otm.svg" class="logo"></object>
+    </header>
+    <div class="container">
+      <h1>Os 7 Contos Existenciais</h1>
+      <a href="isabel.html">Isabel Renasce</a>
+      <a href="sofia.html">Sofia Vive</a>
+      <a href="teresa.html">Êxtase de Santa Teresa</a>
+    </div>
+    <div class="spacer"></div>
+    <div class="container">
+      <h1>Crónicas</h1>
+      <a href="meio.html">Deixar Coisas a Meio</a>
+      <a href="betocracia.html">A Queda da Betocracia</a>
+      <a href="punk.html">O Punk Não Morreu</a>
+      <a href="casa.html">A Casa Que Me Ofende</a>
+    </div>
+    <div class="spacer"></div>
+    <div class="container">
+      <h1>Contos Pós-Modernos</h1>
+      <a href="lingua.html">Lava Línguas</a>
+    </div>
+    <div class="spacer"></div>
+    <footer>
+      <a href="https://instagram.com/tiagomanuscrito" target="_blank">Instagram</a> /
+      <a href="https://www.tiktok.com/@tiagomanuscrito" target="_blank">Tiktok</a> /
+      <a href="https://www.youtube.com/@otiagomarques" target="_blank">youtube</a>
+    </footer>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-    	<div style="clear: both">
-         <h3 style="display: inline;"> {{ post.date | date: "%b %d" }}</h3>
-     	 <h4 style="display: inline;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-     	 </div>
-    </article>
-  {% endfor %}
-</div>
+  </body>
+</html>
